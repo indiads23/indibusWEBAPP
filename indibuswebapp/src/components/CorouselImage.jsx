@@ -12,7 +12,7 @@ const imageData = [
     {
         label: "Digital Marketing",
         alt: "Digital",
-        url:"./carouselimage3.png"
+        url:"./Carouselimage3.png"
     }
 ]
 
