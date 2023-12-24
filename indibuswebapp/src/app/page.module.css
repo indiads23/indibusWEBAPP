@@ -4,12 +4,9 @@
     align-items: center;
     height: 50rem;
     margin-bottom: 4rem;
-    position: absolute;
     
   }
-  .thumps{
-    display: block;
-  }
+  
   @media (max-width:790px) {
     .App{
         height: 25rem;
@@ -30,4 +27,3 @@
         object-fit: cover;
     }
   }
-  
