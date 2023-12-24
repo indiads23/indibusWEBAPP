@@ -1,11 +1,9 @@
 *{
-  padding: 0;margin: 0;box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 li{
   list-style: none;
-}
-Link{
-  text-decoration: none;
 }
 a{
   text-decoration: none;
@@ -19,8 +17,9 @@ a{
   color: #ffffff;
   position: fixed;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   z-index: 999;
+
 }
 
 .nav-links a {
@@ -62,40 +61,6 @@ a{
 .menu li {
   padding: 5px 14px;
 }
-
-/* DROPDOWN MENU */
-.services {
-  position: relative;
-}
-
-.dropdown {
-  background-color: rgba(0, 0, 0, 1);
-  padding: 1em 0;
-  position: absolute;
-  /*WITH RESPECT TO PARENT*/
-  display: none;
-  border-radius: 8px;
-  top: 35px;
-}
-
-.dropdown li+li {
-  margin-top: 10px;
-}
-
-.dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
-}
-
-.dropdown li:hover {
-  background-color: rgba(0, 0, 0, 1);
-}
-
-.services:hover .dropdown {
-  display: block;
-}
-
 /* RESPONSIVE NAVBAR MENU STARTS */
 
 /* CHECKBOX HACK */
@@ -119,14 +84,14 @@ input[type=checkbox] {
     background-color: rgba(0, 0, 0, 1);
     right: 0;
     left: 0;
-    text-align: center;
+    text-align: right;
     padding: 16px 0;
   }
 
   .menu li:hover {
     display: inline-block;
     background-color: rgba(0, 0, 0, 1);
-    transition: 0.3s ease;
+    transition: 1s ease-in-out;
   }
 
   .menu li+li {
@@ -140,21 +105,20 @@ input[type=checkbox] {
   .hamburger {
     display: block;
   }
-
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  }
-
-  .dropdown li:hover {
-    background-color: rgba(0, 0, 0, 1);
-  }
 }
-
 .logoImage {
   border-radius: 360px;
   height: 30px;
   width: 30px;
   margin: 1rem;
+}
+/* Footer Designing */
+.footer{
+  width: 100%;
+  height: 14rem; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #000000;
+
 }
