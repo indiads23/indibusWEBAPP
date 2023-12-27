@@ -221,7 +221,7 @@ form{
     height: 4rem;
   }
 }
-@media (max-width: 550px){
+@media (max-width: 790px){
   .footer{
     height: 17rem;
     flex: wrap;
@@ -241,4 +241,12 @@ form{
     align-items: self-end;
     justify-content: center;
   }
+}
+.navSigns{
+  height: 1.5rem;
+  width: 1.5rem;
+  align-self: center;
+  justify-self: center;
+  color: #ffffff;
+  padding-top: 0.4rem;
 }
