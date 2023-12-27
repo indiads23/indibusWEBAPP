@@ -49,6 +49,12 @@
     font-weight: 300;
     text-align: center;
   }
+  .col3{
+    transition: all .2s ease-in-out;
+  }
+  .col3:hover{
+    transform: scale(1.1);
+  }
   
 
 
