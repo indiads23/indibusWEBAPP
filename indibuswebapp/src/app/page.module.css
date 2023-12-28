@@ -55,7 +55,77 @@
   .col3:hover{
     transform: scale(1.1);
   }
-  
+
+
+.midcontainer1{
+  position: relative;
+  margin-top: 0.5rem;
+}
+.midtext1{
+  position: absolute;
+  z-index: 99;
+  background-color: white;
+  max-width: 1110px;
+  min-width: 288px;
+  padding: 3rem;
+  bottom: -415px;
+  right: -0px;
+}
+.midimg1{
+  position: absolute;
+}
+.h2w{
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.pw{
+  line-height: 1.5rem;
+}
+.midimg1 img{
+  width: 1100px;
+}
+.white1{
+  background-color: white;
+  left: 0;
+  height: 570px;
+  overflow: hidden;
+}
+
+
+
+.midcontainer2{
+  position: relative;
+  margin-top: 0.5rem;
+}
+.white{
+  background-color: white;
+  left: 0;
+  height: 570px;
+  overflow: hidden;
+}
+.midimg2 img{
+  width: 1100px;
+}
+.midimg2{
+  top: 0;
+  right: -0px;
+  position: absolute;
+}
+.maincontainer{
+  height: auto;
+}
+.midtext2{
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  max-width: 1110px;
+  min-width: 288px;
+  padding: 3rem;
+  bottom: -415px;
+}
+
+
+
 
 
 
