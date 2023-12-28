@@ -42,6 +42,22 @@ const Middiv = () => {
             </div>
         </div>
         </div>
+
+        <div className={styles.white1}>
+        <div className={styles.midcontainer1}>
+            <div className={styles.midimg1}>
+                <img src="./whyindibus1.png" alt="" />
+            </div>
+            <div className={styles.midtext1}>
+                <h2 className={styles.h2w} >WHY CHOOSE INDIBUS</h2>
+                <p className={styles.pw} >In a world where the digital space is constantly evolving, INDIBUS sees an opportunity to reshape 
+                    the way businesses engage with their target audience. We envision a future where businesses 
+                    harness the full potential of digital platforms to connect, communicate, and convert. 
+                    ur commitment to this vision is unwavering, and we will continue to be at the forefront of digital 
+                    innovation, adapting to the ever-changing landscape to provide cutting-edge solutions.  </p>
+            </div>
+        </div>
+        </div>
     </div>    
 
 
