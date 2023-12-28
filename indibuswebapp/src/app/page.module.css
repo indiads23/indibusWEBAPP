@@ -56,7 +56,7 @@
     transform: scale(1.1);
   }
 
-
+/* middiv*/
 .midcontainer1{
   position: relative;
   margin-top: 0.5rem;
@@ -92,7 +92,6 @@
 }
 
 
-
 .midcontainer2{
   position: relative;
   margin-top: 0.5rem;
@@ -123,8 +122,37 @@
   padding: 3rem;
   bottom: -415px;
 }
+@media (max-width:790px){
+  .midtext1{
+    width: 85%;
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    padding: 2rem;
+    top: 50px;
+    height: 450px;
+    overflow-x: hidden;
+    padding-top: 1rem;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+  .midtext2{
+    position: absolute;
+    z-index: 9;
+    width: 85%;
+    padding: 2rem;
+    top: 50px;
+    height: 450px;
+    overflow-x: hidden;
+    padding-top: 1rem;
+    opacity: 0.8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
 
-
+/* ------*/
 
 
 
