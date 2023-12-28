@@ -16,7 +16,7 @@ const Middiv = () => {
             </div>
             <div className={styles.midtext1}>
                 <h2 className={styles.h2w} >WHO ARE WE</h2>
-                <p className={styles.pw} >we envision a future where businesses thrive in the digital landscape with unparalleled success. 
+                <p className={styles.pw} >We envision a future where businesses thrive in the digital landscape with unparalleled success. 
                     Our company stands as a beacon of innovation and expertise, leading the way in the realm of digital 
                     business solutions. As the trusted partner of choice for businesses worldwide, INDIBUS is committed 
                     to delivering excellence in content creation, digital marketing, website development, and digital 
