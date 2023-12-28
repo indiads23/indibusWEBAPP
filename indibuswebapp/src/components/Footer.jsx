@@ -16,7 +16,7 @@ const Footer = () => {
               </form>
             </div>
             <div id='logocontainer' className='footerContent'>
-                <SocialIcon id='x' className='footerlogo'  url='https://twitter.com/indibus23?t=WDqQVpPbmi0QF2m0fXmHGg&s=08'/>
+                <SocialIcon id='x' className='footerlogo'  url='https://x.com/indibus23?t=WDqQVpPbmi0QF2m0fXmHGg&s=08'/>
                 <SocialIcon id='facebook' className='footerlogo' url='https://www.facebook.com/indibus23?mibextid=gik2fB'/>
                 <SocialIcon id='instagram' className='footerlogo' url='https://www.instagram.com/indibus23?igsh=MXN5aGQ4YW9vcTU4aA=='/>
                 <SocialIcon id='linkedin' className='footerlogo' url='https://www.linkedin.com/company/indibus23/'/>
