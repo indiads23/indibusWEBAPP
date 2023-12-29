@@ -126,67 +126,58 @@ input[type=checkbox] {
 
 /* Footer Designing */
 .footer{
-  width: 100%;
-  height: 14rem; 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #000000;
-  justify-content: center;
-  align-items: center;
-}
-
-.footerContainer{
-  padding-left: 25px;
-  padding-right: 25px;
-  width: 100%;
-}
-.row{
-  display: flex;
-  align-items: center; 
-  flex-wrap: wrap;
-  justify-content: space-around ;
-}
-.footerContent{
-  flex-basis: 30%;
-  min-width: 250px;
+  background-color: black;
+  color: white;
 }
 #in{
-  color: green;
-  font-size: 2rem;
+  color: orange;
 }
 #di{
   color: white;
-  font-size: 2rem;
 }
 #bus{
-  color: orange;
+  color: green;
+}
+.indip{
   font-size: 2rem;
 }
-#footname{
+.footsmall{
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 12rem;
-}
-.footerContent img{
-  width: 4rem;
-
-}
-.footerlogo{
-  margin-left: 25px;
-  border-radius: 50%;
-}
-.indi{
-  display: flex;
-  height: 12rem;
-  align-items:self-end;
-}
-#logocontainer{
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 8rem;
+}
+.footrow{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.col4{
+  flex-basis: 25%;
+  margin-top: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.col4a{
+  flex-basis: 25%;
+  margin-top: 30px;
+  padding: 30px;
+  display: flex;
+  align-items:  center;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerContent{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 1.4rem;
+ padding-top: 1.5rem;
+ padding-bottom: 1.5rem;
 }
 #x:hover{
   box-shadow: 0px 0px 10px 10px  #ffffff;
@@ -200,59 +191,21 @@ input[type=checkbox] {
 #linkedin:hover{
   box-shadow: 0px 0px 10px 10px  #0077b5;
 }
-.subButton{
-  width: 250px;
-  height: 1.5rem;
+.footerlogo{
+  border-radius: 50%;
 }
-form{
-  display: flex;  
-  flex-direction: column;
-  align-items: self-start;
-  justify-content: center;
+.indip2{
+  font-size: 1rem;
+  font-weight: 200;
 }
 
-#logocontainer{
-  height: 7rem;
-}
-@media (max-width: 800px) {
-  .footer{
-    height: 12.5rem;
-    flex: wrap;
-  }
-  .indi{
-    height: 1rem;
-  }
-  .subButton{
-    width: 240px;
-  }
-  #footname{
-    display: flex;
-    justify-content: flex-end;
-    align-items: self-end;
-    height: 4rem;
-  }
-}
-@media (max-width: 790px){
-  .footer{
-    height: 17rem;
-    flex: wrap;
-  }
-  .footerContent{
-    width: 100%;
-  }
-  .footerlogo{
-    margin-left: 0px;
-    margin: 5px;
-  }
-  #logocontainer{
-    height: auto;
-    margin-top: 15px;
-  }
-  #footname{
-    align-items: self-end;
-    justify-content: center;
-  }
-}
+
+
+
+
+
+/*-----*/
+
 .navSigns{
   height: 1.5rem;
   width: 1.5rem;
