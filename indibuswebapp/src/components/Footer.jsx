@@ -14,17 +14,41 @@ const Footer = () => {
                       <span id='di'>Di</span>
                       <span id='bus'>Bus</span>
                     </h2>
-                    <p className='indip2' style={{color:'white'}} >Sdsdhjbc hshjfsbhfsl shdfbrufhuec cerbh</p>
+                    <p className='indip2' style={{color:'white'}} >Sdsdhjbc hshjfsbhfslfdfvdv <br/>shdfbrufhuec cerbhfvdfvdf</p>
                 </div>
                 <div className='col4a'>
                    <h3>Contacts</h3>
+                   <div className='contacts'>
+                    <img className='phicon' src="./phone.svg" alt="phone" />
+                      <div className='number'>
+                        <p>+918299800XXX</p>
+                        <p>+917308989XXX</p>
+                      </div>
+                   </div>
+                   <div className='location'>
+                    <img className='phicon' src="./location.svg" alt="location" />
+                      <div className='number'>
+                        <p>ABESIT Qwertyty</p>
+                      </div>
+                   </div>
 
                 </div>
                 <div className='col4a'>
                    <h3>Company</h3>
+                   <ul>
+                    <li><a className='footlink' href='#'>HOME</a></li>
+                    <li><a className='footlink' href='#'>SERVICES</a></li>
+                    <li><a className='footlink' href='#'>CONTACTS</a></li>
+                   </ul>
                 </div>
                 <div className='col4a'>
                    <h3>Feedback</h3>
+                   <div className='feed'>
+                        <textarea id="story" name="story" rows="6" cols="28">
+
+                        </textarea>
+                        <button className='btnicon' ><img className='sendicon' src="./send.svg" alt="send" /></button>
+                    </div>
                 </div>
               </div>
             </div> 
