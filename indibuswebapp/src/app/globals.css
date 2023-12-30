@@ -229,11 +229,11 @@ input[type=checkbox] {
 @media (max-width: 768px){
   .footrow{
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: center;
     margin-left: 6%;
     margin-right: 6%;
     padding-top: 5%;
-    gap: 0;
+    gap: 15%;
   }
   .col4a,.col4{
     margin: 0;
@@ -254,6 +254,7 @@ input[type=checkbox] {
   }
   #feedback{
     text-align: center;
+    gap: 0;
   }
   .footerContent{
     gap: 1rem;
