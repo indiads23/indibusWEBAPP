@@ -229,16 +229,15 @@ input[type=checkbox] {
 @media (max-width: 768px){
   .footrow{
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-evenly;
     margin-left: 6%;
     margin-right: 6%;
     padding-top: 5%;
-    gap: 10%;
+    gap: 0;
   }
   .col4a,.col4{
     margin: 0;
     padding: 0;
-    text-align: center;
   }
   .col4a h3{
     padding-top: 20px;
@@ -254,9 +253,7 @@ input[type=checkbox] {
     display: none;
   }
   #feedback{
-   margin-left: 18%;
-   gap: 0;
-   margin-top: 10%;
+    text-align: center;
   }
   .footerContent{
     gap: 1rem;
