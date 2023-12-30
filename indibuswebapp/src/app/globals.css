@@ -175,9 +175,9 @@ input[type=checkbox] {
  display: flex;
  align-items: center;
  justify-content: center;
- gap: 1.4rem;
- padding-top: 1.5rem;
- padding-bottom: 1.5rem;
+ gap: 2.5rem;
+ padding-top: 1rem;
+ padding-bottom: 1rem;
 }
 #x:hover{
   box-shadow: 0px 0px 10px 10px  #ffffff;
@@ -217,6 +217,72 @@ input[type=checkbox] {
   background-color: black;
   border: none;
 }
+.copyright{
+  text-align: right;
+  padding-bottom: 1%;
+  padding-right: 1%;
+}
+#copy{
+  font-size: 0.9rem;
+  color: rgb(141, 136, 136);
+}
+@media (max-width: 768px){
+  .footrow{
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-top: 5%;
+    gap: 10%;
+  }
+  .col4a,.col4{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .col4a h3{
+    padding-top: 20px;
+  }
+  .footsmall{
+    padding: 0;
+  }
+  textarea {
+    width: 200px;
+    height: 40px;
+  }
+  #company{
+    display: none;
+  }
+  #feedback{
+   margin-left: 18%;
+   gap: 0;
+   margin-top: 10%;
+  }
+  .footerContent{
+    gap: 1rem;
+  }
+  .copyright{
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 371px){
+  .footrow{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+@media (max-width: 355px){
+  .footrow{
+    align-items: center;
+    justify-content: center;
+  }
+  #feedback{
+    margin-left: 0;
+   }
+}
+
 
 
 
