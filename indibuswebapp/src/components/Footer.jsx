@@ -33,7 +33,7 @@ const Footer = () => {
                    </div>
 
                 </div>
-                <div className='col4a'>
+                <div id='company' className='col4a'>
                    <h3>Company</h3>
                    <ul>
                     <li><a className='footlink' href='#'>HOME</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <li><a className='footlink' href='#'>CONTACTS</a></li>
                    </ul>
                 </div>
-                <div className='col4a'>
+                <div id='feedback' className='col4a'>
                    <h3>Feedback</h3>
                    <div className='feed'>
                         <textarea id="story" name="story" rows="6" cols="28">
@@ -58,6 +58,9 @@ const Footer = () => {
                 <SocialIcon id='x' className='footerlogo'  url='https://x.com/indibus23?t=WDqQVpPbmi0QF2m0fXmHGg&s=08'/>
                 <SocialIcon id='instagram' className='footerlogo' url='https://www.instagram.com/indibus23?igsh=MXN5aGQ4YW9vcTU4aA=='/>
                 <SocialIcon id='linkedin' className='footerlogo' url='https://www.linkedin.com/company/indibus23/'/>
+              </div>
+              <div className='copyright'>
+                <p id='copy' >&#9400;InDiBus 2024</p>
               </div>
           </div>
 
