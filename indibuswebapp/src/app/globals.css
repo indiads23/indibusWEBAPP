@@ -150,8 +150,8 @@ input[type=checkbox] {
 .footrow{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .col4{
@@ -198,7 +198,25 @@ input[type=checkbox] {
   font-size: 1rem;
   font-weight: 200;
 }
-
+.phicon{
+  width: 30px;
+}
+.contacts,.location{
+  display: flex;
+  gap: 10px;
+}
+.footlink{
+  text-decoration: none;
+  color: white;
+  line-height: 2rem;
+}
+.sendicon{
+  width: 30px;
+}
+.btnicon{
+  background-color: black;
+  border: none;
+}
 
 
 
