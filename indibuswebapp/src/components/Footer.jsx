@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
   return (
-    <div>
+ 
         <div className='footer'>
           <div className='smallfoot'>
             <div className='footrow'>
@@ -14,21 +14,21 @@ const Footer = () => {
                       <span id='di'>Di</span>
                       <span id='bus'>Bus</span>
                     </h2>
-                    <p className='indip2' style={{color:'white'}} >Sdsdhjbc hshjfsbhfslfdfvdv <br/>shdfbrufhuec cerbhfvdfvdf</p>
+                    <p className='indip2' style={{color:'white'}} >Your Business <br/>Our Expertise</p>
                 </div>
                 <div className='col4a'>
                    <h3>Contacts</h3>
                    <div className='contacts'>
                     <img className='phicon' src="./phone.svg" alt="phone" />
                       <div className='number'>
-                        <p>+918299800XXX</p>
-                        <p>+917308989XXX</p>
+                        <p>+91 93100 09063</p>
+                        {/* <p>+917308989XXX</p> */}
                       </div>
                    </div>
                    <div className='location'>
                     <img className='phicon' src="./location.svg" alt="location" />
                       <div className='number'>
-                        <p>ABESIT Qwertyty</p>
+                        <p>19 KM stone,ABES IT, First Floor</p>
                       </div>
                    </div>
 
@@ -38,10 +38,10 @@ const Footer = () => {
                    <ul>
                     <li><a className='footlink' href='#'>HOME</a></li>
                     <li><a className='footlink' href='#'>SERVICES</a></li>
-                    <li><a className='footlink' href='#'>CONTACTS</a></li>
+                    <li><a className='footlink' href='/contactUs'>CONTACTS</a></li>
                    </ul>
                 </div>
-                <div id='feedback' className='col4a'>
+                {/* <div id='feedback' className='col4a'>
                    <h3>Feedback</h3>
                    <div className='feed'>
                         <textarea id="story" name="story" rows="6" cols="28">
@@ -49,7 +49,7 @@ const Footer = () => {
                         </textarea>
                         <button className='btnicon' ><img className='sendicon' src="./send.svg" alt="send" /></button>
                     </div>
-                </div>
+                </div> */}
               </div>
             </div> 
             <hr />
@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
           </div>
 
-    </div>
+   
   )
 }
 

@@ -204,7 +204,8 @@ input[type=checkbox] {
 .contacts,.location{
   display: flex;
   gap: 10px;
-}
+  width: 100%;
+} 
 .footlink{
   text-decoration: none;
   color: white;

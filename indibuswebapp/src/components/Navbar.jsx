@@ -28,13 +28,13 @@ const Navbar = () => {
           
           <div className="menu">
             <li><Link href="#"><IoMdHome className='navSigns'/>  Home</Link></li>
-            <li><Link href="#"><GrContact className='navSigns'/>  Contact</Link></li>
+            <li><Link href="/contactUs"><GrContact className='navSigns'/>  Contact</Link></li>
 
             <li className="services">
               <a href="#"><MdDesignServices className='navSigns'/>  Services</a>
             </li>
 
-            <li><Link href="#"><MdAccountBox className='navSigns'/>  Sign In</Link></li>
+            {/* <li><Link href="#"><MdAccountBox className='navSigns'/>  Sign In</Link></li> */}
             {/* <li><Link href="#contact">Contact</Link></li> */}
           </div>
         </ul>
