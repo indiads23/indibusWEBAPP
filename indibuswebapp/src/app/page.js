@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
+import Testimonial from '@/components/Testimonial'
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
     <main className={styles.main}>
       <Updiv/>
       <Middiv/>
+      <Testimonial/>
     </main>
   )
 }
