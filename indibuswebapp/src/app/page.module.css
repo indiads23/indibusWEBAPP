@@ -279,8 +279,8 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    flex-basis: 27%;
-    padding: 30px;
+    flex-basis: 22%;
+    padding: 25px;
   }
   .quotes{
     width: 30px;
@@ -292,14 +292,36 @@
   }
   .testrow{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
   }
   .tp{
     font-size: .9rem;
     font-weight: 700;
     text-align: center;
+  }
+  .person{
+    display: flex;
+    gap: 5px;
+  }
+  .per1{
+    border-left: 2px solid rgb(175, 169, 169);
+    padding: 10px;
+  }
+  .testimg{
+    margin-top: 5px;
+  }
+  .namep{
+    font-weight: 700;
+  }
+  .namep1{
+    font-size: 0.9rem;
+  }
+
+  .testrow{
+    width: 100%;
   }
 
   @media (max-width:790px){
@@ -307,9 +329,14 @@
       flex-direction: column;
     }
     #testh2{
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     .testcontainer{
      padding: 3rem;
     }
+    .testcontainer{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
   }
