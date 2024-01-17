@@ -227,24 +227,6 @@
         object-fit: cover;
     }
   }
-.ContactMainDiv{
-   background-color:#0E656A;
-   min-height: 100vh;
-   padding-top: 5rem;
-   width: 100%;
-}
-.ContactMainDiv h1{
-  color: #ffffff;
-  font-size: 3rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.contentHeading{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  min-height: fit-content;
-}
 
 /* ---Testimonial---*/
   .testcontainer{
@@ -337,6 +319,91 @@
     .testcontainer{
       padding-left: 20px;
       padding-right: 20px;
+    }
+  }
+
+  /* ---Contact---*/
+
+  .contmain{
+    height: 100vh;
+    background-color: #217176;
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  .contformcontainer{
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    padding-top: 80px;
+    position: absolute;
+  
+  }
+  .contform{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      gap: 2rem;
+  }
+  .touch{
+    color: #0E656A;
+  }
+  .conth1{
+    font-size: 4.5rem;
+  }
+  .location{
+    z-index: 9;
+    position: relative;
+    left: 60%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 150px 0px #646464;
+
+  }
+  .conticon{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .contphone img{
+    width: 35px;
+  }
+
+  @media (max-width:790px){
+    .location{
+      display: none;
+    }
+    .contmain{
+      padding: 0;
+      padding-top: 5rem;
+      padding-right: 2%;
+      align-items: flex-start;
+    }
+    .contformcontainer{
+      padding: 8%;
+    }
+    .contform{
+      width: 100%;
+    }
+    .conth1{
+      font-size: 3rem;
+    }
+    .contphone p{
+      font-size: 11px;
+    }
+    .contphone img{
+      width: 20px;
     }
 
   }
