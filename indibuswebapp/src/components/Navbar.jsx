@@ -10,14 +10,14 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        
+        <Link href="/" style={{color:"#FFFFFF"}}>
         <div className="logo">
             <img className='logoImage'
                 src='/newlogo.jpg'
             />
             <h3 style={{color:'#f58d0e'}}>In</h3><h3>Di</h3><h3 style={{color:'#13ee2c'}}>Bus</h3>
         </div>
-
+        </Link>
         
         <ul className="nav-links">
 
@@ -27,7 +27,7 @@ const Navbar = () => {
 
           
           <div className="menu">
-            <li><Link href="#"><IoMdHome className='navSigns'/>  Home</Link></li>
+            <li><Link href="/"><IoMdHome className='navSigns'/>  Home</Link></li>
             <li><Link href="/contactUs"><GrContact className='navSigns'/>  Contact</Link></li>
 
             <li className="services">

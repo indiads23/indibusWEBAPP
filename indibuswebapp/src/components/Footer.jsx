@@ -3,6 +3,8 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
+  const date = new Date()
+  const year = date.getFullYear()
   return (
  
         <div className='footer'>
@@ -60,7 +62,7 @@ const Footer = () => {
                 <SocialIcon id='linkedin' className='footerlogo' url='https://www.linkedin.com/company/indibus23/'/>
               </div>
               <div className='copyright'>
-                <p id='copy' >&#9400;InDiBus 2024</p>
+                <p id='copy' >&#9400;InDiBus {year}</p>
               </div>
           </div>
 
