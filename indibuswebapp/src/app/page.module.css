@@ -199,14 +199,16 @@
       padding-right: 0; 
     }
     .row{
-      display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
       gap: 2rem;
+      overflow-x: auto;
+      overflow-y: hidden;
       padding-bottom: 5rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
     }
     .container{
       width: 100%;

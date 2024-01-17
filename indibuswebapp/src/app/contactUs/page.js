@@ -12,7 +12,7 @@ const ContactPage = () => {
           <div className={styles.contformcontainer}>
             <div className={styles.contform}>
                 <h1 className={styles.conth1} >Get in <span className={styles.touch}>Touch</span></h1>
-                <p className={styles.formp} >Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</p>
+                <p className={styles.formp} >Welcome to Awesome World of InDiBUS where Your business gets some new and big wings to fly higher.</p>
                 <Contactform/>
                  <div className={styles.conticon}>
                     <div className={styles.contphone}>
@@ -21,7 +21,7 @@ const ContactPage = () => {
                     </div>
                     <div className={styles.contphone}>
                        <img src="./emailbw.png" alt=""/>
-                      <p>indibus2024@gmail.com</p>
+                      <p>indibus.23@gmail.com</p>
                     </div>
                    
                 </div>
