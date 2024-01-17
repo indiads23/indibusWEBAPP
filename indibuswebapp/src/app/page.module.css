@@ -4,11 +4,10 @@
     align-items: center;
     height: 50rem;
     margin-bottom: 4rem;
-    
   }
   .container{
     width: 100%;
-    background-image: linear-gradient( rgba(38, 2, 2, 0), rgba(49, 11, 2, 0.802));
+    background-color: #EEF5FF;
     padding-top: 9rem;
   }
   @media (max-width:1630px){
@@ -43,7 +42,6 @@
   }
 
   .smallcontainer{
-   
     margin: auto;
     padding-left: 10rem;
     padding-right: 10rem; 
@@ -58,7 +56,7 @@
     padding-bottom: 5rem;
   }
   .h2text{
-    color: white;
+    color: rgb(67, 63, 63);
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -118,7 +116,7 @@
 .white1{
   background-color: white;
   left: 0;
-  height: 570px;
+  height: 530px;
   overflow: hidden;
 }
 
@@ -247,3 +245,98 @@
   justify-content: center;
   min-height: fit-content;
 }
+
+/* ---Testimonial---*/
+  .testcontainer{
+   background-color: #EEF5FF;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+  .testhead{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding-bottom: 3rem;
+  }
+  #testp{
+    color: #176b87c9;
+    font-size: .8rem;
+    font-weight: bolder;
+  }
+  #testh2{
+    color: #176B87;
+    text-shadow: 1px 1px 1px #176b87a6;
+    font-weight: 600;
+  }
+  .testimonial1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-basis: 22%;
+    padding: 25px;
+  }
+  .quotes{
+    width: 30px;
+  }
+  .testimg{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .testrow{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .tp{
+    font-size: .9rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .person{
+    display: flex;
+    gap: 5px;
+  }
+  .per1{
+    border-left: 2px solid rgb(175, 169, 169);
+    padding: 10px;
+  }
+  .testimg{
+    margin-top: 5px;
+  }
+  .namep{
+    font-weight: 700;
+  }
+  .namep1{
+    font-size: 0.9rem;
+  }
+
+  .testrow{
+    width: 100%;
+  }
+
+  @media (max-width:790px){
+    .testrow{
+      flex-direction: column;
+    }
+    #testh2{
+      font-size: 1.3rem;
+    }
+    .testcontainer{
+     padding: 3rem;
+    }
+    .testcontainer{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  }
