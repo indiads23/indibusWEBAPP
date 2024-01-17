@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../page.module.css"
-import Location from '@/components/location'
+import Location from '@/components/Location'
 import Contactform from '@/components/Contactform'
 
 
