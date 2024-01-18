@@ -26,13 +26,17 @@ const ContactPage = () => {
                    
                 </div>
             </div>
-          </div>
-          <div data-aos="fade-left"
+            <div className={styles.loctest}>
+            <div data-aos="fade-left"
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
      data-aos-duration="3000" className={styles.location}>
             <Location/>
           </div>
+            </div>
+
+          </div>
+          
       </div>
     </div>
   )
