@@ -6,6 +6,10 @@
     margin-bottom: 4rem;
   }
   .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     background-color: #EEF5FF;
     padding-top: 9rem;
@@ -39,6 +43,9 @@
     .container{
       padding-top: 3rem;
     }
+  }
+  .coro{
+    max-width: 1800px;
   }
 
   .smallcontainer{
@@ -337,10 +344,10 @@
     display: flex;
     width: fit-content;
     position: absolute;
-    top: 53%;
+    top: 53vh;
     left: 45%;
     transform: translate(-50%,-50%);
-  
+    max-height: fit-content;
   }
   .contform{
       display: flex;
@@ -420,5 +427,212 @@
     .loctest{
       width: 0;
     }
+  }
 
+  /* ---Services---*/
+
+  .sermain{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 5%;
+    display: flex;
+    max-width: 2000px;
+  }
+  .sermainimg{
+    width: 400px;
+  }
+  .sermainh1{
+    font-size: 3rem;
+    font-weight: 700;
+    
+  }
+  .sermaincol2{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sermaincol1{
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sercardsrow1{
+    display: flex;
+    gap: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  #card1{
+    background-color: #FAE8CE;
+    flex-basis: 30%;
+  }
+  #card2{
+    background-color: #D9F4E3;
+    flex-basis: 30%;
+  }
+  #card3{
+    background-color: #D4E8F3;
+    flex-basis: 30%;
+  }
+  #card4{
+    background-color: #EAD3F5;
+    flex-basis: 23%;
+  }
+  #card5{
+    background-color: #F6F6D5;
+    flex-basis: 23%;
+  }
+  #card6{
+    background-color: #F9D7D7;
+    flex-basis: 23%;
+  }
+  #card7{
+    background-color: #D9F4E3;
+    flex-basis: 23%;
+  }
+  .sercards{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding-bottom: 9%;
+  }
+  .card1img{
+    width: 90px;
+  }
+  .card2img{
+    width: 70px;
+  }
+  .card3img{
+    width: 70px;
+  }
+  .card4img{
+    width: 100px;
+  }
+  .contentcreation{
+    padding-left: 6%;
+    padding-top: 4%;
+    color: rgb(52, 51, 51);;
+  }
+  .card6img{
+    width: 65px;
+  }
+  .card7img{
+    width: 100px;
+  }
+  .card4h1{
+    font-size: 1.4rem;
+  }
+  .cardbutton{
+    width: fit-content;
+    background-color: transparent;
+    border: 2px solid rgb(177, 174, 174);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+  }
+  .cardbutton:hover{
+    border: 2px solid rgb(0, 0, 0);
+    
+  }
+  .cardbutton:hover .buttonp{
+    color: black;
+  }
+
+  .buttonp{
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: rgb(99, 99, 99);
+  }
+  .services{
+    max-width: 1300px;
+  }
+  .serviceshero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .digitalspan{
+    color: #F47356;
+  }
+  #cardgo2{
+    flex-basis: 35%;
+    background-color: #FAE8CE;
+  }
+  #cardgo1{
+    flex-basis: 35%;
+    background-color: #D9F4E3;
+  }
+  .googlemycard{
+    display: flex;
+    gap: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-wrap: wrap;
+  }
+  .softwareh1{
+    padding-left: 7%;
+    padding-bottom: 1%;
+    color: rgb(52, 51, 51);
+  }
+  .cardgo2img{
+    width: 100px;
+  }
+  .seo1{
+    width: 70px;
+  }
+
+  @media (max-width:790px){
+    .sermainimg{
+      width: 125px;
+    }
+    .sermainh1{
+      font-size: 1rem;
+    }
+    .serviceshero{
+      padding-top: 25%;
+    }
+    .softwareh1{
+      padding-bottom: 3%;
+      font-size: .5rem;
+      text-align: center;
+      padding-left: 0;
+    }
+    .sercardsrow1{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .card{
+      width: 95%;
+    }
+    .googlemycard{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .contentcreation{
+      font-size: .7rem;
+      text-align: center;
+      padding-left: 0;
+    }
   }
