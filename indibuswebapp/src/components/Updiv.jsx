@@ -12,9 +12,9 @@ const Updiv = () => {
             <div className={styles.coro}>
                 <Corousel/> 
             </div>
+            <h2 className={styles.h2text} >Our Exited Services Offerings</h2>
             <div className={styles.smallcontainer}>
-                <h2 className={styles.h2text} >Our Exited Services Offerings</h2>
-                <div className={styles.row}>
+                <div className={styles.row1}>
                     <div className={styles.col3}>
                         <div className={styles.imgdiv3} style={{backgroundImage:'url(./block1.png)'}}>
                             <p className={styles.imgp} >InDi <span style={{color: "#13ee2c"}}>Ads</span></p>
