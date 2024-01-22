@@ -26,7 +26,7 @@ const ServicesPage = () => {
                   <div data-aos="zoom-out-up" id={styles.card1} className={styles.card}>
                     <img className={styles.card1img} src='./card1website.png' alt='img'/>
                     <h2>Website Development</h2>
-                    <p>InDiDus innovation meets elegance in website development! Our expert team of skilled developers is dedicated to crafting stunning and responsive websites tailored to your unique vision and business needs.</p>
+                    <p>InDiBus innovation meets elegance in website development! Our expert team of skilled developers is dedicated to crafting stunning and responsive websites tailored to your unique vision and business needs.</p>
                     <Link href='/contactUs'><button className={styles.cardbutton}><p className={styles.buttonp}>Get A Quote</p></button></Link>
                         
                   </div>
