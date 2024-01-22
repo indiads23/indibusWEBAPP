@@ -24,7 +24,7 @@ const Footer = () => {
                     <img className='phicon' src="./phone.svg" alt="phone" />
                       <div className='number'>
                         <p>+91 93100 09063</p>
-                        {/* <p>+917308989XXX</p> */}
+                        <p>+91 82998 97560</p> 
                       </div>
                    </div>
                    <div className='location'>

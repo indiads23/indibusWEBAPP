@@ -31,7 +31,7 @@ const Navbar = () => {
             <li><Link href="/contactUs"><GrContact className='navSigns'/>  Contact</Link></li>
 
             <li className="services">
-              <a href="/services"><MdDesignServices className='navSigns'/>  Services</a>
+              <Link href="/services"><MdDesignServices className='navSigns'/>  Services</Link>
             </li>
 
             {/* <li><Link href="#"><MdAccountBox className='navSigns'/>  Sign In</Link></li> */}

@@ -12,8 +12,8 @@ const RegistrationForm = () => {
 
   const inputStyle = {
     width: '100%',
-    padding: '20px 20px',
-    margin: '8px 0',
+    padding: '15px 10px',
+    margin: '4px 0',
     display: 'inline-block',
     boxSizing: 'border-box',
     border: '0.5px solid #C9D4D5',
