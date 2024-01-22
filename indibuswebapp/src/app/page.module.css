@@ -1,3 +1,4 @@
+
 .App {
     display: flex;
     justify-content: center;
@@ -49,6 +50,10 @@
   }
 
   .smallcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     padding-left: 10rem;
     padding-right: 10rem; 
@@ -57,10 +62,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 5rem;
-    padding-bottom: 5rem;
   }
   .h2text{
     color: rgb(67, 63, 63);
@@ -86,10 +89,52 @@
     text-align: center;
   }
   .col3{
-    transition: all .2s ease-in-out;
+    flex-basis: 27%;
   }
-  .col3:hover{
-    transform: scale(1.1);
+  .explorebutton{
+    width: fit-content;
+    border: 2px solid rgb(177, 174, 174);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(90deg, rgba(253,130,57,0.3155856092436975) 0%, rgba(9,9,121,0.20073967086834732) 52%, rgba(164,49,133,0.26516544117647056) 100%);
+  }
+  .explorebutton:hover{
+    background: linear-gradient(90deg, rgba(253,130,57,0.5340730042016807) 0%, rgba(9, 9, 121, 0.081) 52%, rgba(164,49,133,0.506061799719888) 100%);
+  }
+  .expbuttonp{
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: black;
+  }
+
+  #arrow{
+    display: inline-block;
+    margin-left: 10px;
+  }
+  #homecardgo1{
+    background-color: #D9F4E3;
+    flex-basis: 30%;
+  }
+  .cardhome{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  @media (max-width:790px){
+    .cardhome{
+      width: 300px;
+    }
+    .smallcontainer{
+      padding-bottom: 0;
+    }
+    .explorebutton{
+      margin-bottom: 20px;
+    }
   }
 
 /* middiv*/
@@ -242,6 +287,10 @@
         height: 100%;
         object-fit: cover;
     }
+    .row1{
+      padding-bottom: 10px;
+    }
+    
   }
 
 /* ---Testimonial---*/
@@ -342,31 +391,33 @@
 
   .contmain{
     background-color: #217176;
-    height: 100vh;
+    height: 110vh;
   }
   .contformcontainer{
     background-color: white;
     border-radius: 10px;
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     display: flex;
     width: fit-content;
     position: absolute;
     top: 53vh;
     left: 45%;
     transform: translate(-50%,-50%);
-    max-height: fit-content;
+    height: fit-content;
   }
   .contform{
       display: flex;
       flex-direction: column;
       width: 70%;
-      gap: 2rem;
+      gap: 1rem;
   }
   .touch{
     color: #0E656A;
   }
   .conth1{
-    font-size: 300%;
+    font-size: 250%;
   }
   .location{
     z-index: 9;
@@ -374,7 +425,7 @@
     overflow: hidden;
     box-shadow: 0px 0px 150px 0px #646464;
     position: absolute;
-    left: 50%;
+    left: 20%;
 
   }
   .conticon{
@@ -383,21 +434,29 @@
     align-items: center;
     justify-content: space-around;
   }
-  .contphone{
+  .contphone,.contmail{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
   }
+  .contmail p{
+    font-size: 12px;
+    color: #6E7781;
+  }
   .contphone img{
-    width: 35px;
+    width: 20px;
   }
   .formp{
-    font-size: 80%;
+    font-size: 70%;
   }
   .loctest{
     width: 30%;
     position: relative;
+  }
+  #numb1,#numb2{
+    font-size: 12px;
+    color: #6E7781;
   }
 
   @media (max-width:790px){
@@ -424,12 +483,6 @@
     }
     .conth1{
       font-size: 3rem;
-    }
-    .contphone p{
-      font-size: 11px;
-    }
-    .contphone img{
-      width: 20px;
     }
     .loctest{
       width: 0;
@@ -561,7 +614,7 @@
   .buttonp{
     font-size: 1.1rem;
     font-weight: 900;
-    color: rgb(99, 99, 99);
+    color: #6E7781;
   }
   .services{
     max-width: 1300px;

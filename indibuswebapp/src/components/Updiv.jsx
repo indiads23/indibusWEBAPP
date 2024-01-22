@@ -2,6 +2,8 @@
 import React from 'react'
 import Corousel from '@/components/Corousel'
 import styles from "../app/page.module.css"
+import Link from 'next/link'
+import { MdArrowForward } from "react-icons/md";
 
 
 const Updiv = () => {
@@ -12,38 +14,36 @@ const Updiv = () => {
             <div className={styles.coro}>
                 <Corousel/> 
             </div>
-            <h2 className={styles.h2text} >Our Exited Services Offerings</h2>
+            <h2 className={styles.h2text} >Our Exciting Service offerings</h2>
             <div className={styles.smallcontainer}>
                 <div className={styles.row1}>
                     <div className={styles.col3}>
-                        <div className={styles.imgdiv3} style={{backgroundImage:'url(./block1.png)'}}>
-                            <p className={styles.imgp} >InDi <span style={{color: "#13ee2c"}}>Ads</span></p>
-                            <p className={styles.imgp2} >InDiAds is a creative content 
-                                producing and advertising 
-                                company that is part of 
-                                INDIBUS. We specialize 
-                                in creating </p>
-                        </div>
+                    <div data-aos="zoom-out-up" id={styles.card1} className={styles.cardhome}>
+                    <img className={styles.card1img} src='./card1website.png' alt='img'/>
+                    <h2>Website Development</h2>
+                    <p>InDiDus innovation meets elegance in website development! Our expert team of skilled developers is dedicated to crafting stunning and responsive websites tailored to your unique vision and business needs.</p>
+                        
+                  </div>
                     </div>
-                    <div className={styles.col3} style={{backgroundImage:'url(./block2.png)'}} >
-                        <div  className={styles.imgdiv3}>
-                            <p className={styles.imgp} >InDi <span style={{color: "#13ee2c"}}>Learn</span></p>
-                            <p className={styles.imgp2} >InDiLearn is an education 
-                                based startup that is part of 
-                                INDIBUS We focus on 
-                                developing</p>
-                        </div>
+                    <div className={styles.col3}>
+                    <div data-aos="zoom-out-up" id={styles.card2} className={styles.cardhome}>
+                  <img className={styles.card2img} src='./card2app.png' alt='img'/>
+                    <h2>App Devlopement</h2>
+                    <p>InDiBus innovation transforms ideas into extraordinary apps. Our skilled team of developers specializes in crafting seamless and cutting-edge mobile applications.</p>
+                      
+                  </div>
                     </div>
-                    <div className={styles.col3} style={{backgroundImage:'url(./block3.png)'}}>
-                        <div className={styles.imgdiv3}>
-                            <p className={styles.imgp} >InDi <span style={{color: "#13ee2c"}}>Collab</span></p>
-                            <p className={styles.imgp2} >You have also an option to do 
-                                collaboration with InDiBus 
-                                which is the best platform 
-                                to make</p>
-                        </div>
+                    <div className={styles.col3}>
+                    <div data-aos="zoom-out-up" id={styles.card3} className={styles.cardhome}>
+                  <img className={styles.card3img} src='./card3.png' alt='img'/>
+                    <h2>Customized Software</h2>
+                    <p>We specialize in creating customized software that precisely aligns with your unique business needs.</p>
+                       
+                  </div>
                     </div>
                 </div>
+
+                <Link href='/services'><button className={styles.explorebutton}><p className={styles.expbuttonp}>Explore More<div id={styles.arrow}><MdArrowForward /></div></p></button></Link>
             </div>
         </div>
         
