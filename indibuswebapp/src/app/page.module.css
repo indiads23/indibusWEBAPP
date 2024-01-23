@@ -57,6 +57,7 @@
     margin: auto;
     padding-left: 10rem;
     padding-right: 10rem; 
+    padding-bottom: 2rem;
   }
   .row1{
     display: flex;
@@ -64,6 +65,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 5rem;
+    padding-bottom: 2.5rem;
   }
   .h2text{
     color: rgb(67, 63, 63);
@@ -93,16 +95,48 @@
   }
   .explorebutton{
     width: fit-content;
-    border: 2px solid rgb(177, 174, 174);
+    border: none;
     padding: 15px;
     border-radius: 10px;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    transition: all ease 0.2s;
     background: linear-gradient(90deg, rgba(253,130,57,0.3155856092436975) 0%, rgba(9,9,121,0.20073967086834732) 52%, rgba(164,49,133,0.26516544117647056) 100%);
   }
   .explorebutton:hover{
     background: linear-gradient(90deg, rgba(253,130,57,0.5340730042016807) 0%, rgba(9, 9, 121, 0.081) 52%, rgba(164,49,133,0.506061799719888) 100%);
   }
+
+
+  /* Explore button animation*/
+  .explorebutton{
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+  }
+  .explorebutton::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+  }
+  .explorebutton:hover::after{
+    bottom: 0;
+    border-radius: 0;
+  }
+  .expbuttonp{
+    z-index: 999;
+    position: relative;
+  }
+  .explorebutton:hover .expbuttonp{
+    color: white;
+  }
+  /* explore button animation ends*/
+
+
   .expbuttonp{
     font-size: 1.1rem;
     font-weight: 900;
@@ -124,6 +158,15 @@
     flex-wrap: wrap;
     padding: 20px;
     border-radius: 20px;
+  }
+  .explorebutton:active{
+    scale: 0.9;
+  }
+  .cardbutton:active{
+    scale: 0.9;
+  }
+  .cardbutton{
+    transition: all ease 0.2s;
   }
   @media (max-width:790px){
     .cardhome{
@@ -289,6 +332,8 @@
     }
     .row1{
       padding-bottom: 10px;
+      padding-left: 40px;
+      padding-right: 50px;
     }
     
   }
@@ -530,6 +575,7 @@
   .card{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
     padding: 20px;
@@ -653,6 +699,36 @@
   .seo1{
     width: 70px;
   }
+  /* Explore button animation*/
+  .cardbutton{
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+  }
+  .cardbutton::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+  }
+  .cardbutton:hover::after{
+    bottom: 0;
+    border-radius: 0;
+  }
+  .buttonp{
+    z-index: 999;
+    position: relative;
+  }
+  .cardbutton:hover .buttonp{
+    color: white;
+  }
+  /* explore button animation ends*/
+
 
   @media (max-width:790px){
     .sermainimg{

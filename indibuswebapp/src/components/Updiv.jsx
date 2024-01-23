@@ -18,7 +18,7 @@ const Updiv = () => {
             <div className={styles.smallcontainer}>
                 <div className={styles.row1}>
                     <div className={styles.col3}>
-                    <div data-aos="zoom-out-up" id={styles.card1} className={styles.cardhome}>
+                    <div  id={styles.card1} className={styles.cardhome}>
                     <img className={styles.card1img} src='./card1website.png' alt='img'/>
                     <h2>Website Development</h2>
                     <p>InDiDus innovation meets elegance in website development! Our expert team of skilled developers is dedicated to crafting stunning and responsive websites tailored to your unique vision and business needs.</p>
@@ -26,7 +26,7 @@ const Updiv = () => {
                   </div>
                     </div>
                     <div className={styles.col3}>
-                    <div data-aos="zoom-out-up" id={styles.card2} className={styles.cardhome}>
+                    <div id={styles.card2} className={styles.cardhome}>
                   <img className={styles.card2img} src='./card2app.png' alt='img'/>
                     <h2>App Devlopement</h2>
                     <p>InDiBus innovation transforms ideas into extraordinary apps. Our skilled team of developers specializes in crafting seamless and cutting-edge mobile applications.</p>
@@ -34,7 +34,7 @@ const Updiv = () => {
                   </div>
                     </div>
                     <div className={styles.col3}>
-                    <div data-aos="zoom-out-up" id={styles.card3} className={styles.cardhome}>
+                    <div id={styles.card3} className={styles.cardhome}>
                   <img className={styles.card3img} src='./card3.png' alt='img'/>
                     <h2>Customized Software</h2>
                     <p>We specialize in creating customized software that precisely aligns with your unique business needs.</p>
