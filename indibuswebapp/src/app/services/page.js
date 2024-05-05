@@ -19,7 +19,7 @@ const ServicesPage = () => {
           </div>
         </div>
         <div className={styles.softwareh1}>
-                <h1>Software Devlopement</h1>
+                <h1>Software Developement</h1>
               </div>
         <div className={styles.sercards}>
               <div className={styles.sercardsrow1}>
@@ -32,7 +32,7 @@ const ServicesPage = () => {
                   </div>
                   <div data-aos="zoom-out-up" id={styles.card2} className={styles.card}>
                   <img className={styles.card2img} src='./card2app.png' alt='img'/>
-                    <h2>App Devlopement</h2>
+                    <h2>App Developement</h2>
                     <p>InDiBus innovation transforms ideas into extraordinary apps. Our skilled team of developers specializes in crafting seamless and cutting-edge mobile applications.</p>
                     <Link href='/contactUs'><button className={styles.cardbutton}><p className={styles.buttonp}>Get A Quote</p></button></Link>
                       
