@@ -47,6 +47,35 @@
   }
   .coro{
     max-width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #283768;
+    padding-left: 8%;
+  }
+  .corolefttext{
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .spansoft{
+    font-weight: 500;
+    color: #7ee1c8;
+  }
+  .coroleft{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  @media (max-width:790px){
+    .corolefttext{
+      font-size: 15px;
+    }
+  }
+  .corolefttext{
+    color: #ADE6D8;
+  }
+  .homeimg{
+    width: 60%;
   }
 
   .smallcontainer{
@@ -71,6 +100,7 @@
     color: rgb(67, 63, 63);
     font-size: 2rem;
     margin-bottom: 2rem;
+    margin-top: 3rem;
   }
   .imgdiv3{
     width: 276px;
@@ -101,6 +131,14 @@
     transition: all ease 0.2s;
     background: linear-gradient(90deg, rgba(253,130,57,0.3155856092436975) 0%, rgba(9,9,121,0.20073967086834732) 52%, rgba(164,49,133,0.26516544117647056) 100%);
   }
+  .explorebuttonl{
+    width: fit-content;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all ease 0.2s;
+  }
+
   .explorebutton:hover{
     background: linear-gradient(90deg, rgba(253,130,57,0.5340730042016807) 0%, rgba(9, 9, 121, 0.081) 52%, rgba(164,49,133,0.506061799719888) 100%);
   }

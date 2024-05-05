@@ -12,7 +12,17 @@ const Updiv = () => {
     <div>
         <div className={styles.container}>
             <div className={styles.coro}>
-                <Corousel/> 
+              <div className={styles.corol}>
+                <div className={styles.coroleft}>
+                      <h1 className={styles.corolefttext}>WE ARE BUILDING<br/><span className={styles.spansoft}>SOFTWARE</span> TO HELP</h1>
+                      <div className={styles.corobtn}>
+                        <Link href='/services'><button className={styles.explorebuttonl}><p className={styles.expbuttonp}>Explore More<div id={styles.arrow}><MdArrowForward /></div></p></button></Link>
+                      </div>
+                    </div>
+                </div>
+               
+                     <img className={styles.homeimg} src='./homeimg.jpg'/>
+                
             </div>
             <h2 className={styles.h2text} >Our Exciting Service offerings</h2>
             <div className={styles.smallcontainer}>
