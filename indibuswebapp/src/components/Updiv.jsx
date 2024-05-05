@@ -38,7 +38,7 @@ const Updiv = () => {
                     <div className={styles.col3}>
                     <div id={styles.card2} className={styles.cardhome}>
                   <img className={styles.card2img} src='./card2app.png' alt='img'/>
-                    <h2>App Devlopement</h2>
+                    <h2>App Developement</h2>
                     <p>InDiBus innovation transforms ideas into extraordinary apps. Our skilled team of developers specializes in crafting seamless and cutting-edge mobile applications.</p>
                       
                   </div>
