@@ -70,6 +70,12 @@
     .corolefttext{
       font-size: 15px;
     }
+    .coroleft{
+      gap: 5px;
+    }
+    .explorebuttonl{
+      width: 80px;
+    }
   }
   .corolefttext{
     color: #ADE6D8;
@@ -132,7 +138,6 @@
     background: linear-gradient(90deg, rgba(253,130,57,0.3155856092436975) 0%, rgba(9,9,121,0.20073967086834732) 52%, rgba(164,49,133,0.26516544117647056) 100%);
   }
   .explorebuttonl{
-    width: fit-content;
     border: none;
     padding: 15px;
     border-radius: 10px;

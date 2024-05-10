@@ -15,7 +15,6 @@ const Navbar = () => {
             <img className='logoImage'
                 src='/newlogo.jpg'
             />
-            <h3 style={{color:'#f58d0e'}}>In</h3><h3>Di</h3><h3 style={{color:'#13ee2c'}}>Bus</h3>
         </div>
         </Link>
         

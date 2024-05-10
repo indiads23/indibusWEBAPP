@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
+import Link from 'next/link'
 
 const Footer = () => {
   const date = new Date()
@@ -11,12 +12,13 @@ const Footer = () => {
           <div className='smallfoot'>
             <div className='footrow'>
                 <div className='col4'>
-                    <h2 className='indip'>
-                      <span id='in'>In</span>
-                      <span id='di'>Di</span>
-                      <span id='bus'>Bus</span>
-                    </h2>
-                    <p className='indip2' style={{color:'white'}} >Your Business <br/>Our Expertise</p>
+                <Link href="/" style={{color:"#FFFFFF"}}>
+        <div className="logo">
+            <img className='logoImage'
+                src='/newlogo.jpg'
+            />
+        </div>
+        </Link>
                 </div>
                 <div className='col4a'>
                    <h3>Contacts</h3>

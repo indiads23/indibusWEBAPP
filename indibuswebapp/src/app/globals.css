@@ -108,10 +108,7 @@ input[type=checkbox] {
   }
 }
 .logoImage {
-  height: 45px;
-  width: 50px;
-  margin: 10px;
-  margin-right: 15px;
+  width: 150px;
 }
 @media (max-width: 800px){
   .logoImage{
@@ -128,18 +125,6 @@ input[type=checkbox] {
 .footer{
   background-color: black;
   color: white;
-}
-#in{
-  color: orange;
-}
-#di{
-  color: white;
-}
-#bus{
-  color: green;
-}
-.indip{
-  font-size: 2rem;
 }
 .footsmall{
   display: flex;
@@ -193,10 +178,6 @@ input[type=checkbox] {
 }
 .footerlogo{
   border-radius: 50%;
-}
-.indip2{
-  font-size: 1rem;
-  font-weight: 200;
 }
 .phicon{
   width: 30px;
