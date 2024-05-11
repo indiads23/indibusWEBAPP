@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Corousel from '@/components/Corousel'
 import styles from "../app/page.module.css"
 import Link from 'next/link'
 import { MdArrowForward } from "react-icons/md";
