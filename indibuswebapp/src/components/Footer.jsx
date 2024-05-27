@@ -64,7 +64,7 @@ const Footer = () => {
                 <SocialIcon id='linkedin' className='footerlogo' url='https://www.linkedin.com/company/indibus23/'/>
               </div>
               <div className='copyright'>
-                <p id='copy' >&#9400;InDiBus {year}</p>
+                <p id='copy' >&#9400;INDIBUS {year}</p>
               </div>
           </div>
 
