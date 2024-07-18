@@ -4,6 +4,10 @@ import Location from '@/components/Location'
 import Contactform from '@/components/Contactform'
 import { CiMail } from "react-icons/ci";
 
+export const metadata = {
+  title: 'INDIBUS Contact Us',
+  description: 'Official Indibus webapp',
+}
 
 
 const ContactPage = () => {
