@@ -95,9 +95,9 @@ const ServicesPage = () => {
                     <Link href='/contactUs'><button className={styles.cardbutton}><p className={styles.buttonp}>Get A Quote</p></button></Link>
                   </div>
                   <div data-aos="zoom-out-up" id={styles.cardgo2} className={styles.card}>
-                  <img className={styles.cardgo2img} src='./cardgo2.png' alt='img'/>
-                    <h2 className={styles.card4h1}>Local SEO</h2>
-                    <p>Boost your local visibility and connect with customers in your community with InDiBus. Our dedicated team specializes in Local SEO strategies that propel your business to the forefront of local search results, ensuring that you stand out when it matters most.</p>
+                  {/* <img className={styles.cardgo2img} src='./cardgo2.png' alt='img'/> */}
+                    <h2 className={styles.card4h1}>Google analytics</h2>
+                    <p>Analyse the Performance of you Website</p>
                     <Link href='/contactUs'><button className={styles.cardbutton}><p className={styles.buttonp}>Get A Quote</p></button></Link>
                   </div>
 
