@@ -4,7 +4,7 @@ import styles from "../page.module.css"
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'INDIBUS Services',
+  title: 'INDIBUS Software Solutions Pvt Ltd',
   description: 'Official Indibus webapp',
 }
 

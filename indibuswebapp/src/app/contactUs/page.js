@@ -5,7 +5,7 @@ import Contactform from '@/components/Contactform'
 import { CiMail } from "react-icons/ci";
 
 export const metadata = {
-  title: 'INDIBUS Contact Us',
+  title: 'INDIBUS Software Solutions Pvt Ltd',
   description: 'Official Indibus webapp',
 }
 
