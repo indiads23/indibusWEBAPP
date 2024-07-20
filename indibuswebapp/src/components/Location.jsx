@@ -1,3 +1,4 @@
+'use client'
 // components/GoogleMapsLocation.js
 import React from 'react';
 
