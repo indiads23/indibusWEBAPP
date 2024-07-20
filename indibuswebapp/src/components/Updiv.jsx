@@ -15,7 +15,7 @@ const Updiv = () => {
                 <div className={styles.coroleft}>
                       <h1 className={styles.corolefttext}>WE ARE BUILDING<br/><span className={styles.spansoft}>SOFTWARE</span> TO HELP</h1>
                       <div className={styles.corobtn}>
-                        <Link href='/services'><button className={styles.explorebuttonl}><p className={styles.expbuttonp}>Explore More<div id={styles.arrow}><MdArrowForward /></div></p></button></Link>
+                        <Link href='/services'><button className={styles.explorebuttonl}><p className={styles.expbuttonp}>Explore More<span id={styles.arrow}><MdArrowForward /></span></p></button></Link>
                       </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const Updiv = () => {
                     </div>
                 </div>
 
-                <Link href='/services'><button className={styles.explorebutton}><p className={styles.expbuttonp}>Explore More<div id={styles.arrow}><MdArrowForward /></div></p></button></Link>
+                <Link href='/services'> <button className={styles.explorebutton}><p className={styles.expbuttonp}>Explore More<span id={styles.arrow}><MdArrowForward /></span></p></button></Link>
             </div>
         </div>
         

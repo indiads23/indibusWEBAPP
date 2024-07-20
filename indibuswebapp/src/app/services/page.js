@@ -1,12 +1,9 @@
-
+'use client'
 import React from 'react'
 import styles from "../page.module.css"
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'INDIBUS Software Solutions Pvt Ltd',
-  description: 'Official Indibus webapp',
-}
+
 
 
 const ServicesPage = () => {

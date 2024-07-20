@@ -1,13 +1,10 @@
+'use client'
 import React from 'react'
 import styles from "../page.module.css"
 import Location from '@/components/Location'
 import Contactform from '@/components/Contactform'
 import { CiMail } from "react-icons/ci";
 
-export const metadata = {
-  title: 'INDIBUS Software Solutions Pvt Ltd',
-  description: 'Official Indibus webapp',
-}
 
 
 const ContactPage = () => {
