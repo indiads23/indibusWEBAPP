@@ -27,6 +27,7 @@ const Navbar = () => {
           
           <div className="menu">
             <li><Link href="/"><IoMdHome className='navSigns'/>  Home</Link></li>
+            <li><Link href="/interprice"><IoMdHome className='navSigns'/>  Insterprices</Link></li>
             <li><Link href="/contactUs"><GrContact className='navSigns'/>  Contact</Link></li>
 
             <li className="services">
