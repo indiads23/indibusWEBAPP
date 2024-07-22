@@ -23,8 +23,8 @@ export default function page() {
                 <Feature />
                 <CoreFeature />
                 <WorkFlow />
-                <Package />
-                <Subscribe />
+                {/* <Package /> */}
+                {/* <Subscribe /> */}
             </ThemeUIProvider>
         </main>
     );

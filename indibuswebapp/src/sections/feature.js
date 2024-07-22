@@ -10,34 +10,34 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Technical Support',
+    title: 'Technical Support',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Enhance the technical aspects of your startup with our experienced tech team.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Marketing Support',
+    title: 'Marketing Support',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Take your brand to new heights with our advertising and marketing support',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'IT Consultancy',
+    title: 'IT Consultancy',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Grow your information technology services with our specialized IT Support team',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Internship Oppotunities',
+    title: 'Internship Opportunities',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Get internship opportunities in INDIBUS and partner companies',
   },
 ];
 

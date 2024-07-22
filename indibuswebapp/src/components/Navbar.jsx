@@ -5,6 +5,7 @@ import { IoMdHome } from "react-icons/io";
 import { GrContact } from "react-icons/gr";
 import { MdDesignServices } from "react-icons/md";
 import { MdAccountBox } from "react-icons/md";
+import { BsFillBuildingsFill } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -27,7 +28,7 @@ const Navbar = () => {
           
           <div className="menu">
             <li><Link href="/"><IoMdHome className='navSigns'/>  Home</Link></li>
-            <li><Link href="/interprice"><IoMdHome className='navSigns'/>  Insterprices</Link></li>
+            <li><Link href="/interprice"><BsFillBuildingsFill className='navSigns'/>  StartUps and Incubation </Link></li>
             <li><Link href="/contactUs"><GrContact className='navSigns'/>  Contact</Link></li>
 
             <li className="services">

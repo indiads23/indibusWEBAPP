@@ -86,7 +86,7 @@ export default function BlogSection() {
             centerMode={false}
             className=""
             containerClass="carousel-container"
-            customButtonGroup={<ButtonGroup />}
+            customButtonGroup={<ButtonGroup  />}
             dotListClass="test"
             draggable={true}
             focusOnSelect={false}

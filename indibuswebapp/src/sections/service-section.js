@@ -17,24 +17,23 @@ import Smart from '../assets/services/smart.svg';
 import Secure from '../assets/services/secure.svg';
 
 const data = {
-  subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  title: 'Business Goals Achieved with Technology',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'Innovation',
+      title: 'Innovation',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Build your Products with latest Technology',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Scalability',
+      title: 'Scalability',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Scale your business in entire Nation',
     },
   ],
 };
