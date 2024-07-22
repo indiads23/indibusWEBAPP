@@ -10,34 +10,34 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Technical Support',
+    title: 'Technical Support',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Enhance the technical aspects of your startup with our experienced tech team.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Marketing Support',
+    title: 'Marketing Support',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Take your brand to new heights with our advertising and marketing support',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'IT Consultancy',
+    title: 'IT Consultancy',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Grow your information technology services with our specialized IT Support team',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Internship Oppotunities',
+    title: 'Internship Opportunities',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Get internship opportunities in INDIBUS and partner companies',
   },
 ];
 
@@ -46,8 +46,7 @@ export default function KeyFeature() {
     <Box sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
-          slogan="Whats the function"
-          title="Meet the feature of product"
+          title="Support and Services"
         />
 
         <Grid sx={styles.grid}>

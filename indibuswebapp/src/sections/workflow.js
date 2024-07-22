@@ -7,27 +7,19 @@ import ArrowEven from '../assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Register Your StartUp with INDIBUS by Filling the form',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Book a Consultancy Appointment with our Experts',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Get Proper Guidance about your StartUp and Technical Products',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Collaborate and build Your Dream',
   },
 ];
 

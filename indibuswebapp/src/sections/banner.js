@@ -1,6 +1,7 @@
 import { Container, Box, Heading, Text, Button } from 'theme-ui';
 import ShapeLeft from '../assets/shape-left.png';
 import ShapeRight from '../assets/shape-right.png';
+import { Link } from '@/components/link';
 
 export default function Banner() {
   return (
@@ -8,14 +9,13 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Products To Explore
+            Collaboration Opportunity for StartUp and Incubation cells.
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+            INDIBUS Softwares Solutions Pvt. Ltd. is collaborating with startup and Incubation Cells across India 
+            for the overall growth of their StartUps.  
           </Text>
-          <Button variant="primary">Explore</Button>
+          <a sx={styles.banner.anchor} variant="primary" href="https://forms.gle/mcitG7MDfykMqTeH7">Explore</a>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
