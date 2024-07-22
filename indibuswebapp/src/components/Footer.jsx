@@ -33,25 +33,30 @@ export default function Footer() {
             </ul>
           </div>
           <div class="footer-col">
-            <h4>online shop</h4>
+            <h4>Quick Links</h4>
             <ul>
-              <li><a href="#">watch</a></li>
-              <li><a href="#">bag</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">dress</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="/interprice">Startups & Incubation</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contactUs">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="#"><BsInstagram /></a>
-              <a href="#"><BsTwitter /></a>
-              <a href="#"><GrGoogle/></a>
-              <a href="#"><BsLinkedin /></a>
+              <a href="https://www.instagram.com/indibus23/"><BsInstagram /></a>
+              <a href="https://x.com/indibus23"><BsTwitter /></a>
+              <a href="https://indibus.net/"><GrGoogle/></a>
+              <a href="https://www.linkedin.com/company/indibus23/mycompany/"><BsLinkedin /></a>
             </div>
           </div>
         </div>
+        
       </div>
+      <div className='footer-copy'>
+                <h5>Made With &#10084; under INDIBUS</h5>
+                <small>Copyright &copy; IndiBus || ABESIT , GHAZIABAD</small>
+            </div>
     </footer>
   )
 }

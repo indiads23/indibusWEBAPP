@@ -22,7 +22,7 @@ const Testimonial = () => {
                     </div>
                   </div>
                    <img className={styles.quotes} src="./quotes.png" alt="quotes" />
-                   <p className={styles.tp} >We have been working with Indibus for over a year now, and we have been consistently impressed with their work. They are a creative and talented team who is always coming up with new and innovative ideas. They are also very responsive to our feedback and are always willing to make changes to ensure that we are happy with the final product. We would highly recommend Indibus to anyone looking for a content creation and advertising agency that can deliver results.</p>
+                   <p className={styles.tp} >We have been working with Indibus for over a year now, and we have been consistently impressed with their work.</p>
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="1000" className={styles.testimonial1}>
