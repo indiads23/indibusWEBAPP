@@ -20,7 +20,7 @@ export default function page() {
                 <Banner />
                 <KeyFeature />
                 <ServiceSection />
-                <Feature />
+                {/* <Feature /> */}
                 <CoreFeature />
                 <WorkFlow />
                 {/* <Package /> */}
