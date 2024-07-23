@@ -2,6 +2,13 @@
 	max-width: 1570px;
 	margin:auto;
 }
+
+.footer-copy{
+    text-align: center;
+    margin-top: 6rem;
+    color: #bbbbbb;
+}
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
