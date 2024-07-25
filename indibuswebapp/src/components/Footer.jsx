@@ -54,7 +54,7 @@ export default function Footer() {
         
       </div>
       <div className='footer-copy'>
-                <h5>Made With &#10084; under INDIBUS</h5>
+                <h5>Made With &#10084; under INDIBUS Softwares Solutions Pvt Ltd</h5>
                 <small>Copyright &copy; IndiBus || ABESIT , GHAZIABAD</small>
             </div>
     </footer>

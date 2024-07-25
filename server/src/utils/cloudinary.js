@@ -1,4 +1,4 @@
-import {v2 as cloudinary} from "clodinary" 
+import {v2 as cloudinary} from "cloudinary" 
 import fs from "fs" 
 
 cloudinary.config({ 
@@ -16,7 +16,8 @@ cloudinary.config({
             resource_type:"auto"
         })
         //file has been uploaded succesfully
-        console.loglog("File is Upload succesful", response.url)
+        console.log("File is Upload succesful", response.url)
+        fs.unlinkSync(localFilePath)
         return response
     } catch (error) {
         fs.unlinkSync (localFilePath) //Removes file as the upload operation got failed

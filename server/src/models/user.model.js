@@ -27,15 +27,7 @@ const userSchema = new Schema({
     },
     avatar:{
         type: String,
-        required: true
     },
-    coverImage:{
-        type:String,
-    },
-    watchHistory:[{
-        type:Schema.Types.ObjectId,
-        ref:"Video"
-    }],
     password:{
          type: String, 
          required:[true,"Password is Required"]
