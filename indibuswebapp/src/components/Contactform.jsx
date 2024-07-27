@@ -41,11 +41,11 @@ const RegistrationForm = () => {
   const sendForm =async (e) => {
     e.preventDefault();
     const contactForm = {
-      name,
-      email,
-      phone,
-      interest,
-      message
+      name:name,
+      email:email,
+      phone:phone,
+      interest:interest,
+      message:message
     }
 
     try {
