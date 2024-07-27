@@ -50,7 +50,7 @@ const RegistrationForm = () => {
 
     try {
       setLoading(true)
-      const response = await axios.post("http://localhost:3000/api/contactus/sendcontact",contactForm)
+      const response = await axios.post("https://indibus.net/api/contactus/sendcontact",contactForm)
       console.log(response);
       router.push("/services")
     } catch (error) {
@@ -74,8 +74,7 @@ const RegistrationForm = () => {
 
         <textarea name="message" id="" cols="30" rows="3" style={inputStyle} onChange={(e)=>setMessage(e.target.value)} placeholder='Write a Message for us'></textarea>
 
-
-        <button type="submit" style={buttonStyle} className="registerbtn">Submit</button>
+      {loading?<button type="submit" style={buttonStyle} className="registerbtn">Submit</button>: <button className="registerbtn">Loading</button>}
       </div>
     </form>
   );
