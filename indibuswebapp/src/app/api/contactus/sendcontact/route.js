@@ -5,8 +5,8 @@ const { NextResponse } = require("next/server");
 
 connect()
 export async function POST(request){
-    const reqBody =await request.json()
-    const {name,email,phoneNumber,interest,message} = reqBody
+    const req =await request.json()
+    const {name,email,phoneNumber,interest,message} = req.body
     console.log(name,email,phoneNumber,interest,message);
     console.log(reqBody);
 
