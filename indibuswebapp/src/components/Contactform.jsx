@@ -41,16 +41,19 @@ const RegistrationForm = () => {
   const sendForm =async (e) => {
     e.preventDefault();
     const contactForm = {
-      name:name,
-      email:email,
-      phoneNumber:phone,
-      interest:interest,
-      message:message
+      name,
+      email,
+      phone,
+      interest,
+      message
     }
 
     try {
       setLoading(true)
-      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/contactus/sendcontact`,contactForm)
+      const response = await fetch(`/api/contactus/sendcontact`,{
+        method:"POST",
+        body:JSON.stringify(contactForm)
+      })
       console.log(response);
       router.push("/services")
     } catch (error) {
