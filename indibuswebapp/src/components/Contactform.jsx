@@ -50,7 +50,7 @@ const RegistrationForm = () => {
 
     try {
       setLoading(true)
-      const response = await axios.post("/api/contactus/sendcontact",contactForm)
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/contactus/sendcontact`,contactForm)
       console.log(response);
       router.push("/services")
     } catch (error) {
