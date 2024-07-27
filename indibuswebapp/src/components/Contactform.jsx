@@ -35,17 +35,17 @@ const RegistrationForm = () => {
   const [loading,setLoading] = useState(false)
   const [name,setName] = useState("")
   const [email,setEmail] = useState("")
-  const [phone,setPhone] = useState("")
+  const [phone,setPhone] = useState(0)
   const [interest,setInterest] = useState("")
   const [message,setMessage] = useState("")
   const sendForm =async (e) => {
     e.preventDefault();
     const contactForm = {
-      name,
-      email,
-      phone,
-      interest,
-      message
+      name:name,
+      email:email,
+      phone:phone,
+      interest:interest,
+      message:message
     }
 
     try {
