@@ -50,10 +50,7 @@ const RegistrationForm = () => {
 
     try {
       setLoading(true)
-      const response = await fetch(`/api/contactus/sendcontact`,{
-        method:"POST",
-        body:JSON.stringify(contactForm)
-      })
+      const response = await axios.post(`/api/contactus/sendcontact`,contactForm)
       console.log(response);
       router.push("/services")
     } catch (error) {
