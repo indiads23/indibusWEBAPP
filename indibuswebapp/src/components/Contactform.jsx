@@ -74,7 +74,7 @@ const RegistrationForm = () => {
 
         <textarea name="message" id="" cols="30" rows="3" style={inputStyle} onChange={(e)=>setMessage(e.target.value)} placeholder='Write a Message for us'></textarea>
 
-      {loading?<button type="submit" style={buttonStyle} className="registerbtn">Submit</button>: <button className="registerbtn">Loading</button>}
+      {loading?<button className="registerbtn">Loading</button>:<button type="submit" style={buttonStyle} className="registerbtn">Submit</button>}
       </div>
     </form>
   );
