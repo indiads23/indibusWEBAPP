@@ -43,7 +43,7 @@ const RegistrationForm = () => {
     const contactForm = {
       name:name,
       email:email,
-      phone:phone,
+      phoneNumber:phone,
       interest:interest,
       message:message
     }
@@ -68,7 +68,7 @@ const RegistrationForm = () => {
 
         <input type="email" placeholder="Email" name="user_email" id="email" onChange={(e)=>setEmail(e.target.value)} style={inputStyle} required />
 
-        <input type="tel" placeholder="Phone Number" name='phoneNumber' onChange={(e)=>setPhone(e.target.value)} style={inputStyle} required />
+        <input type="tel" placeholder="Phone Number" name='phoneNumber' onChange={(e)=>setPhone(phone+e.target.value)} style={inputStyle} required />
 
         <input type="text" placeholder="Your Interest" name="subject" id="name" onChange={(e)=>setInterest(e.target.value)} style={inputStyle} required />
 
