@@ -1,9 +1,9 @@
 'use client'
 
-import React,{useRef} from 'react';
+import React,{useRef, useState} from 'react';
 import emailjs from '@emailjs/browser'
 import {useRouter} from 'next/navigation'
-
+import axios from 'axios';
 const RegistrationForm = () => {
   const containerStyle = {
     textAlign: '',
@@ -32,34 +32,47 @@ const RegistrationForm = () => {
   };
   const router = useRouter()
   const form = useRef();
-
-  const sendEmail = (e) => {
+  const [loading,setLoading] = useState(false)
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+  const [phone,setPhone] = useState("")
+  const [interest,setInterest] = useState("")
+  const [message,setMessage] = useState("")
+  const sendForm =async (e) => {
     e.preventDefault();
+    const contactForm = {
+      name:name,
+      email:email,
+      phoneNumber:phone,
+      interest:interest,
+      message:message
+    }
 
-    emailjs.sendForm('service_apbecn9', 'template_lmyqvvc', form.current, 'qGqGA4VavT6GjR2n_')
-      .then((result) => {
-        console.log(result.text);
-        alert(`Message sent successfully! I'll get back to you soon.`)
-        router.push("/services")
-      }, (error) => {
-        console.log(error.text)
-        alert(`Something went wrong! Please try again.`)
-      });
+    try {
+      setLoading(true)
+      const response = await axios.post("http://localhost:3000/api/contactus/sendcontact",contactForm)
+      console.log(response);
+      router.push("/services")
+    } catch (error) {
+      console.log(error);
+    }finally{
+      setLoading(false)
+    }
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendForm}>
       <div style={containerStyle}>
 
-        <input type="text" placeholder="Name" name="user_name" id="name" style={inputStyle} required />
+        <input type="text" placeholder="Name" name="user_name" id="name" onChange={(e)=>setName(e.target.value)} style={inputStyle} required />
 
-        <input type="email" placeholder="Email" name="user_email" id="email" style={inputStyle} required />
+        <input type="email" placeholder="Email" name="user_email" id="email" onChange={(e)=>setEmail(e.target.value)} style={inputStyle} required />
 
-        <input type="tel" placeholder="Phone Number" name='phoneNumber' style={inputStyle} required />
+        <input type="tel" placeholder="Phone Number" name='phoneNumber' onChange={(e)=>setPhone(e.target.value)} style={inputStyle} required />
 
-        <input type="text" placeholder="Your Interest" name="subject" id="name" style={inputStyle} required />
+        <input type="text" placeholder="Your Interest" name="subject" id="name" onChange={(e)=>setInterest(e.target.value)} style={inputStyle} required />
 
-        <textarea name="message" id="" cols="30" rows="3" style={inputStyle} placeholder='Write a Message for us'></textarea>
+        <textarea name="message" id="" cols="30" rows="3" style={inputStyle} onChange={(e)=>setMessage(e.target.value)} placeholder='Write a Message for us'></textarea>
 
 
         <button type="submit" style={buttonStyle} className="registerbtn">Submit</button>
