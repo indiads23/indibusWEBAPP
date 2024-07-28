@@ -33,24 +33,18 @@ const RegistrationForm = () => {
   const router = useRouter()
   const form = useRef();
   const [loading,setLoading] = useState(false)
-  const [name,setName] = useState("")
-  const [email,setEmail] = useState("")
-  const [phone,setPhone] = useState(0)
-  const [interest,setInterest] = useState("")
-  const [message,setMessage] = useState("")
+  const [contact,setContact] = useState({
+    name:"",
+    email:"",
+    phoneNumber:"",
+    interest:"",
+    message:""
+  }) 
   const sendForm =async (e) => {
     e.preventDefault();
-    const contactForm = {
-      name:name,
-      email:email,
-      phoneNumber:phone,
-      interest:interest,
-      message:message
-    }
-
     try {
       setLoading(true)
-      const response = await axios.post("https://indibus.net/api/contactus/sendcontact",contactForm,
+      const response = await axios.post("https://indibus.net/api/contactus/sendcontact",contact,
         {
           timeout:10000
         }
@@ -67,15 +61,15 @@ const RegistrationForm = () => {
     <form ref={form} onSubmit={sendForm}>
       <div style={containerStyle}>
 
-        <input type="text" placeholder="Name" name="user_name" id="name" onChange={(e)=>setName(e.target.value)} style={inputStyle} required />
+        <input type="text" placeholder="Name" name="user_name" id="name" onChange={(e)=>setContact({...contact,name:e.target.value})} style={inputStyle} required />
 
-        <input type="email" placeholder="Email" name="user_email" id="email" onChange={(e)=>setEmail(e.target.value)} style={inputStyle} required />
+        <input type="email" placeholder="Email" name="user_email" id="email" onChange={(e)=>setContact({...contact,email:e.target.value})}required />
 
-        <input type="tel" placeholder="Phone Number" name='phoneNumber' onChange={(e)=>setPhone(phone+e.target.value)} style={inputStyle} required />
+        <input type="tel" placeholder="Phone Number" name='phoneNumber' onChange={(e)=>setContact({...contact,phoneNumber:e.target.value})} style={inputStyle} required />
 
-        <input type="text" placeholder="Your Interest" name="subject" id="name" onChange={(e)=>setInterest(e.target.value)} style={inputStyle} required />
+        <input type="text" placeholder="Your Interest" name="subject" id="name" onChange={(e)=>setContact({...contact,interest:e.target.value})} style={inputStyle} required />
 
-        <textarea name="message" id="" cols="30" rows="3" style={inputStyle} onChange={(e)=>setMessage(e.target.value)} placeholder='Write a Message for us'></textarea>
+        <textarea name="message" id="" cols="30" rows="3" style={inputStyle} onChange={(e)=>setContact({...contact,message:e.target.value})} placeholder='Write a Message for us'></textarea>
 
       {loading?<button className="registerbtn">Loading</button>:<button type="submit" style={buttonStyle} className="registerbtn">Submit</button>}
       </div>
