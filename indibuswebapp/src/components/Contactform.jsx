@@ -50,7 +50,11 @@ const RegistrationForm = () => {
 
     try {
       setLoading(true)
-      const response = await axios.post(`https://indibus.net/api/contactus/sendcontact`,contactForm)
+      const response = await axios.post("https://indibus.net/api/contactus/sendcontact",contactForm,
+        {
+          timeout:10000
+        }
+      )
       router.push("/services")
     } catch (error) {
       console.log(error);

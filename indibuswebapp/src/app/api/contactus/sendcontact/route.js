@@ -24,7 +24,6 @@ export async function POST(request){
         return NextResponse.json({
             message:"Message Recorded Successfully",
             success:true,
-            savedContactDetails
         })
     } catch (error) {
         return NextResponse.json({
