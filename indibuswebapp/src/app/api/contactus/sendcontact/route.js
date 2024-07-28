@@ -9,8 +9,7 @@ export async function POST(request){
     try {
         const reqBody =await request.json()
         const {name,email,phoneNumber,interest,message} = reqBody
-        console.log(name,email,phoneNumber,interest,message);
-        console.log(reqBody);
+        
  
         const newContact = new Contact({
             name:name,
