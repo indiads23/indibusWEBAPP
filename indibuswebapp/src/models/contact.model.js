@@ -22,6 +22,8 @@ const contactSchema = new Schema({
         type:String,
         required:true
     }
+},{
+    timestamps:true
 })
 
 export const Contact = mongoose.models.Contact||mongoose.model("Contact",contactSchema)
