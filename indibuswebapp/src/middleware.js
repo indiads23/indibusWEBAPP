@@ -18,10 +18,6 @@ export function middleware(request){
 
 export const config = {
     matcher:[
-        '/',
         '/adminlogin',
-        '/contactUs',
-        '/interprice',
-        "/services"
     ]
 }
