@@ -1,4 +1,4 @@
-import { connect } from "@/dbConfig/dbConfig.js";
+import { connect } from "@/dbConfigContactInfo/dbConfig.js";
 import { Contact } from "@/models/contact.model.js";
 const { NextResponse } = require("next/server");
 
