@@ -15,11 +15,9 @@ const AdminloginComp = () => {
     const login = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post("/api/user/adminlogin", loginData, {
-                timeout: 10000
-            })
+            const response = await axios.post("https://indibus.net/api/user/adminlogin", loginData)
             console.log(response.data);
-            router.push("/")
+            router.push("/dataTable")
         } catch (error) {
             console.log(error);
         }
