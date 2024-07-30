@@ -34,12 +34,6 @@ const AdminloginComp = () => {
                     </span>
                 </div>
                 <h2 class="login-title">Sign in to your account</h2>
-                <p class="login-subtitle">
-                    Don&apos;t have any account?&nbsp;
-                    <a href="/signup" class="login-signup-link">
-                        Sign Up
-                    </a>
-                </p>
                 <form class="login-form" onSubmit={login} ref={form}>
                     <div class="login-input-group">
                         <div class="login-input-container">
@@ -55,6 +49,12 @@ const AdminloginComp = () => {
                         </div>
                     </div>
                 </form>
+                <p class="login-subtitle">
+                    Forgot your Password?&nbsp;
+                    <a href="/forgotpass" class="login-signup-link">
+                        Forgot Password
+                    </a>
+                </p>
             </div>
         </div>
     )

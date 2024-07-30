@@ -1,10 +1,10 @@
 import React from 'react'
-import Signup from '@/components/signup'
+import Forgotpass from '@/components/forgotpass'
 
 export default function page() {
   return (
     <div>
-        <Signup />
+        <Forgotpass />
     </div>
   )
 }
