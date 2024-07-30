@@ -1,10 +1,10 @@
-import Datatable from '@/components/datatable'
 import React from 'react'
+import Forgotpass from '@/components/forgotpass'
 
 export default function page() {
   return (
     <div>
-      <Datatable />
+        <Forgotpass />
     </div>
   )
 }
