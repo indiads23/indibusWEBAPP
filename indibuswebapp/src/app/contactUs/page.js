@@ -5,8 +5,6 @@ import Location from '@/components/Location'
 import Contactform from '@/components/Contactform'
 import { CiMail } from "react-icons/ci";
 
-
-
 const ContactPage = () => {
   return (
     <div>
