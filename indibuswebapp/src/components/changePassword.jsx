@@ -14,7 +14,7 @@ const ChangePasswordComp = () => {
     const changePassword = async (e)=>{
         e.preventDefault()
         try {
-            const response = await axios.post("/api/user/changepassword",changePasswordData,{
+            const response = await axios.post("https://indibus.net/api/user/changepassword",changePasswordData,{
                 timeout:10000
             })
             router.push("/")
