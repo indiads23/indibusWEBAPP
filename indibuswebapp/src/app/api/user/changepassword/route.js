@@ -27,6 +27,7 @@ export async function POST(request){
                 message:"User not Find"
             })
         }
+        //const validPassword = oldPassword === user.password
         const validPassword = await bcryptjs.compare(oldPassword,user.password)
         
         if(!validPassword){

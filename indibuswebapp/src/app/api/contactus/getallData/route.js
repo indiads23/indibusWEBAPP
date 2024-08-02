@@ -17,7 +17,7 @@ export async function GET(request){
         const response = NextResponse.json({
             message:"Successfully fetched Data",
             success:true,
-            contactInfo
+            constactInfo:[contactInfo]
         },{status:200})
 
         return response

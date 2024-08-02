@@ -1,7 +1,9 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useState } from 'react';
 import "../components/css/datatable.css"
+import axios from 'axios';
 
-const data = [
+const data1 = [
     {
         name: "Ayush Pratap Singh",
         email: "ayush@example.com",
@@ -47,9 +49,26 @@ const data = [
 ];
 
 export default function Datatable() {
+    const [data,setData] = useState([])
+    const [renError,setRenError] = useState("")
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const response = await axios.get("http://localhost:3000/contactus/getallData");
+    //             setData(response.data.contactInfo); // Ensure you're accessing the correct part of the response
+    //             console.log(response.data.contactInfo); // Log the correct data
+    //         } catch (error) {
+    //             setRenError(error.message);
+    //         }
+    //     };
+    
+    //     fetchData(); // Call the async function
+    // }, []);
+    
     return (
         <div className="datatable-container">
-            <h2 className="datatable-title">IndiBus Software Solutions Limited</h2>
+            {renError}
+            <h2 className="datatable-title">IndiBus Software Solutions Private Limited</h2>
             <table className="datatable-table">
                 <thead className="datatable-thead">
                     <tr className="datatable-th">
@@ -61,7 +80,7 @@ export default function Datatable() {
                     </tr>
                 </thead>
                 <tbody className="datatable-tbody">
-                    {data.map((item, index) => (
+                    {data1.map((item,index) => (
                         <tr key={index} className="datatable-tr">
                             <td className="contact-table-data">{item.name}</td>
                             <td className="contact-table-data">{item.email}</td>
