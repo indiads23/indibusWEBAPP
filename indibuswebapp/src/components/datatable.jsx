@@ -51,19 +51,20 @@ const data1 = [
 export default function Datatable() {
     const [data,setData] = useState([])
     const [renError,setRenError] = useState("")
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await axios.get("http://localhost:3000/contactus/getallData");
-    //             setData(response.data.contactInfo); // Ensure you're accessing the correct part of the response
-    //             console.log(response.data.contactInfo); // Log the correct data
-    //         } catch (error) {
-    //             setRenError(error.message);
-    //         }
-    //     };
-    
-    //     fetchData(); // Call the async function
-    // }, []);
+
+    const fetchData = async () => {
+        try {
+            const response = await axios.get("https://indibus.net/api/contactus/getallData");
+            setData(response.data.contactInfo); // Ensure you're accessing the correct part of the response
+            //console.log(response.data.contactInfo); // Log the correct data
+        } catch (error) {
+            setRenError(error.message);
+        }
+    };
+
+    useEffect(() => {
+        fetchData(); // Call the async function
+    }, []);
     
     return (
         <div className="datatable-container">
@@ -80,7 +81,7 @@ export default function Datatable() {
                     </tr>
                 </thead>
                 <tbody className="datatable-tbody">
-                    {data1.map((item,index) => (
+                    {data.map((item,index) => (
                         <tr key={index} className="datatable-tr">
                             <td className="contact-table-data">{item.name}</td>
                             <td className="contact-table-data">{item.email}</td>
@@ -93,7 +94,7 @@ export default function Datatable() {
             </table>
             <div className="datatable-pagination">
                 <button className="datatable-pagination-btn datatable-pagination-prev">Previous</button>
-                <span className="datatable-pagination-info">Page 1 of 10</span>
+                {/* <span className="datatable-pagination-info">Page 1 of 10</span> */}
                 <button className="datatable-pagination-btn datatable-pagination-next">Next</button>
             </div>
         </div>
