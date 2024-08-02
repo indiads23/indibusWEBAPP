@@ -20,7 +20,7 @@ const AdminloginComp = () => {
             const response = await axios.post("https://indibus.net/api/user/adminlogin", loginData)
             console.log(response.data);
             setError(response.message)
-            router.push("/dataTable")
+            router.push("/adminoptions")
         } catch (error) {
             console.log(error);
             setError(error.message)
