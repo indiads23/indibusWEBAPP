@@ -44,12 +44,10 @@ const RegistrationForm = () => {
     e.preventDefault();
     try {
       setLoading(true)
-      const response = await axios.post("https://indibus.net/api/contactus/sendcontact",contact,
-        {
-          timeout:10000
-        }
-      )
       router.push("/services")
+      const response = await axios.post("https://indibus.net/api/contactus/sendcontact",contact,
+      )
+      
     } catch (error) {
       console.log(error);
     }finally{
