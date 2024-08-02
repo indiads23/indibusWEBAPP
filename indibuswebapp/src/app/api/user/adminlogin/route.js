@@ -30,10 +30,10 @@ export async function POST(request){
                 success:false
             },{status:400})
         }
+        //const isPasswordCorrect = password === user.password
+        const isPasswordCorrect = await bcryptjs.compare(password,user.password)
 
-        const isPassworCorrect = await bcryptjs.compare(password,user.password)
-
-        if(!isPassworCorrect){
+        if(!isPasswordCorrect){
             return NextResponse.json({
                 message:"Incorrect Password",
                 success:false

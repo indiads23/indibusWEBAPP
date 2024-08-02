@@ -11,15 +11,19 @@ const AdminloginComp = () => {
         email: "",
         password: ""
     })
+    const [error,setError] = useState("")
 
     const login = async (e) => {
         e.preventDefault()
         try {
+            console.log(loginData);
             const response = await axios.post("https://indibus.net/api/user/adminlogin", loginData)
             console.log(response.data);
+            setError(response.message)
             router.push("/dataTable")
         } catch (error) {
             console.log(error);
+            setError(error.message)
         }
     }
 
@@ -46,7 +50,11 @@ const AdminloginComp = () => {
                             <button type="submit" className="login-submit-button">Sign in</button>
                         </div>
                     </div>
+
                 </form>
+                <p className="login-subtitle">
+                    {error}
+                </p>
                 <p className="login-subtitle">
                     Forgot your Password?&nbsp;
                     <a href="/forgotpass" className="login-signup-link">
