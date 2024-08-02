@@ -44,8 +44,8 @@ const RegistrationForm = () => {
     e.preventDefault();
     try {
       setLoading(true)
-      router.push("/services")
       const response = await axios.post("https://indibus.net/api/contactus/sendcontact",contact,
+      router.push("/services")
       )
       
     } catch (error) {
