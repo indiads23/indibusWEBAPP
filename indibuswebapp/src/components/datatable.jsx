@@ -3,50 +3,50 @@ import React, { useEffect, useState } from 'react';
 import "../components/css/datatable.css"
 import axios from 'axios';
 
-const data1 = [
-    {
-        name: "Ayush Pratap Singh",
-        email: "ayush@example.com",
-        phoneNumber: "+91 XXXX XX XXXX",
-        interest: "Web Development",
-        message: "Looking for a website redesign.",
-    },
-    {
-        name: "Ayush Pratap Singh",
-        email: "ayush@example.com",
-        phoneNumber: "+91 XXXX XX XXXX",
-        interest: "Web Development",
-        message: "Looking for a website redesign.",
-    },
-    {
-        name: "Ayush Pratap Singh",
-        email: "ayush@example.com",
-        phoneNumber: "+91 XXXX XX XXXX",
-        interest: "Web Development",
-        message: "Looking for a website redesign.",
-    },
-    {
-        name: "Ayush Pratap Singh",
-        email: "ayush@example.com",
-        phoneNumber: "+91 XXXX XX XXXX",
-        interest: "Web Development",
-        message: "Looking for a website redesign.",
-    },
-    {
-        name: "Ayush Pratap Singh",
-        email: "ayush@example.com",
-        phoneNumber: "+91 XXXX XX XXXX",
-        interest: "Web Development",
-        message: "Looking for a website redesign.",
-    },
-    {
-        name: "Ayush Pratap Singh",
-        email: "ayush@example.com",
-        phoneNumber: "+91 XXXX XX XXXX",
-        interest: "Web Development",
-        message: "Looking for a website redesign.",
-    },
-];
+// const data1 = [
+//     {
+//         name: "Ayush Pratap Singh",
+//         email: "ayush@example.com",
+//         phoneNumber: "+91 XXXX XX XXXX",
+//         interest: "Web Development",
+//         message: "Looking for a website redesign.",
+//     },
+//     {
+//         name: "Ayush Pratap Singh",
+//         email: "ayush@example.com",
+//         phoneNumber: "+91 XXXX XX XXXX",
+//         interest: "Web Development",
+//         message: "Looking for a website redesign.",
+//     },
+//     {
+//         name: "Ayush Pratap Singh",
+//         email: "ayush@example.com",
+//         phoneNumber: "+91 XXXX XX XXXX",
+//         interest: "Web Development",
+//         message: "Looking for a website redesign.",
+//     },
+//     {
+//         name: "Ayush Pratap Singh",
+//         email: "ayush@example.com",
+//         phoneNumber: "+91 XXXX XX XXXX",
+//         interest: "Web Development",
+//         message: "Looking for a website redesign.",
+//     },
+//     {
+//         name: "Ayush Pratap Singh",
+//         email: "ayush@example.com",
+//         phoneNumber: "+91 XXXX XX XXXX",
+//         interest: "Web Development",
+//         message: "Looking for a website redesign.",
+//     },
+//     {
+//         name: "Ayush Pratap Singh",
+//         email: "ayush@example.com",
+//         phoneNumber: "+91 XXXX XX XXXX",
+//         interest: "Web Development",
+//         message: "Looking for a website redesign.",
+//     },
+// ];
 
 export default function Datatable() {
     const [data,setData] = useState([])
@@ -54,8 +54,10 @@ export default function Datatable() {
 
     const fetchData = async () => {
         try {
+            setData([])
             const response = await axios.get("https://indibus.net/api/contactus/getallData");
-            setData(response.data.contactInfo); // Ensure you're accessing the correct part of the response
+            const result = await response.json()
+            setData(result.data.contactInfo); // Ensure you're accessing the correct part of the response
             //console.log(response.data.contactInfo); // Log the correct data
         } catch (error) {
             setRenError(error.message);
@@ -65,7 +67,8 @@ export default function Datatable() {
     useEffect(() => {
         fetchData(); // Call the async function
     }, []);
-    
+
+
     return (
         <div className="datatable-container">
             {renError}
@@ -81,8 +84,8 @@ export default function Datatable() {
                     </tr>
                 </thead>
                 <tbody className="datatable-tbody">
-                    {data.map((item,index) => (
-                        <tr key={index} className="datatable-tr">
+                    {data.map((item,id) => (
+                        <tr key={id} className="datatable-tr">
                             <td className="contact-table-data">{item.name}</td>
                             <td className="contact-table-data">{item.email}</td>
                             <td className="contact-table-data">{item.phoneNumber}</td>
@@ -93,9 +96,9 @@ export default function Datatable() {
                 </tbody>
             </table>
             <div className="datatable-pagination">
-                <button className="datatable-pagination-btn datatable-pagination-prev">Previous</button>
+                {/* <button className="datatable-pagination-btn datatable-pagination-prev">Previous</button> */}
                 {/* <span className="datatable-pagination-info">Page 1 of 10</span> */}
-                <button className="datatable-pagination-btn datatable-pagination-next">Next</button>
+                <button className="datatable-pagination-btn datatable-pagination-next" onClick={fetchData}>Refresh</button>
             </div>
         </div>
     );
