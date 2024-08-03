@@ -56,8 +56,7 @@ export default function Datatable() {
         try {
             setData([])
             const response = await axios.get("https://indibus.net/api/contactus/getallData");
-            const result = await response.json()
-            setData(result.data.contactInfo); // Ensure you're accessing the correct part of the response
+            setData(response.data.contactInfo); // Ensure you're accessing the correct part of the response
             //console.log(response.data.contactInfo); // Log the correct data
         } catch (error) {
             setRenError(error.message);
@@ -66,7 +65,7 @@ export default function Datatable() {
 
     useEffect(() => {
         fetchData(); // Call the async function
-    }, []);
+    },[]);
 
 
     return (
