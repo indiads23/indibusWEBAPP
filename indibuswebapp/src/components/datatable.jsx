@@ -52,7 +52,7 @@ export default function Datatable() {
     const [data,setData] = useState([])
     const [renError,setRenError] = useState("")
 
-    const fetchData = async () => {
+    async function fetchData (){
         try {
             setData([])
             const response = await axios.get("https://indibus.net/api/contactus/getallData");
