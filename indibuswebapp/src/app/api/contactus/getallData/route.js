@@ -3,9 +3,10 @@ import { NextResponse } from "next/server";
 
 const { connect } = require("@/dbConfigContactInfo/dbConfig");
 
-connect()
+
 export async function GET(request){
     try {
+        await connect()
         const contactInfo  = await Contact.find()
         if(!contactInfo){
             return NextResponse.json({
