@@ -97,7 +97,7 @@ export default function Datatable() {
             <div className="datatable-pagination">
                 {/* <button className="datatable-pagination-btn datatable-pagination-prev">Previous</button> */}
                 {/* <span className="datatable-pagination-info">Page 1 of 10</span> */}
-                <button className="datatable-pagination-btn datatable-pagination-next" onClick={fetchData()}>Refresh</button>
+                <button className="datatable-pagination-btn datatable-pagination-next" onClick={fetchData}>Refresh</button>
             </div>
         </div>
     );
