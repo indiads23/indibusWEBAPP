@@ -54,10 +54,11 @@ export default function Datatable() {
 
     async function fetchData (){
         try {
+            caches.delete()
             setData([])
             const response = await axios.get("https://indibus.net/api/contactus/getallData");
-            setData(response.data.contactInfo); // Ensure you're accessing the correct part of the response
-            //console.log(response.data.contactInfo); // Log the correct data
+            setData(response.data.contactInfo); 
+
         } catch (error) {
             setRenError(error.message);
         }
