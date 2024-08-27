@@ -25,6 +25,12 @@ export async function GET() {
             contactInfo
         }, { status: 200 });
 
+        // Prevent caching by setting appropriate headers
+        response.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+        response.headers.set('Pragma', 'no-cache');
+        response.headers.set('Expires', '0');
+        response.headers.set('Surrogate-Control', 'no-store');
+
         console.log("Response:", response);
         return response;
     } catch (error) {
@@ -35,4 +41,3 @@ export async function GET() {
         }, { status: 500 });
     }
 }
-
