@@ -54,10 +54,6 @@ export default function Datatable() {
 
     async function fetchData (){
         try {
-            // Optionally clear specific cache entries if necessary
-            // Uncomment and adjust if you need to delete specific caches
-            // const cache = await caches.open('your-cache-name');
-            // await cache.delete('your-cache-url');
             setData([])
             const response = await axios.get("https://indibus.net/api/contactus/getallData");
             setData(response.data.contactInfo); 

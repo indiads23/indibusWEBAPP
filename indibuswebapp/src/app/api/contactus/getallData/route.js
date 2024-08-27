@@ -1,10 +1,9 @@
 import { Contact } from "@/models/contact.model";
 import { NextResponse } from "next/server";
+import { connect } from "@/dbConfigContactInfo/dbConfig";
 
-const { connect } = require("@/dbConfigContactInfo/dbConfig");
 
-
-export async function GET(request){
+export async function GET(){
     try {
         await connect()
         const contactInfo  = await Contact.find()
