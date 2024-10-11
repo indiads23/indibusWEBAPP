@@ -35,7 +35,7 @@ const Navbar = () => {
               <Link href="/services"><MdDesignServices className='navSigns'/>  Services</Link>
             </li>
 
-            <li><Link href="/certificates"><GrCertificate className='navSigns'/>  Certificates</Link></li>
+            {/* <li><Link href="/certificates"><GrCertificate className='navSigns'/>  Certificates</Link></li> */}
             {/* <li><Link href="#contact">Contact</Link></li> */}
           </div>
         </ul>
